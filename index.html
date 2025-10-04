@@ -34,6 +34,12 @@
     .restaurant-card img{height:180px;object-fit:cover}
     footer{background:#fff;border-top:1px solid #eee;padding:36px 0}
     @media (max-width:767px){ .hero{padding:32px 0} .hero .order-cta{margin-top:18px} }
+    a.d-inline-flex.bg-dark:hover {
+  background: #000 !important;
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
   </style>
 </head>
 <body>
@@ -41,8 +47,9 @@
 <nav class="navbar navbar-expand-lg shadow-sm">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center" href="#">
-      <span class="brand-box"></span>
-      <strong>food<span style="color:var(--panda)">panda</span></strong>
+  <img src="download (1).png" alt="Foodpanda Logo" width="44" height="44" class="me-2 rounded">
+      <strong>food<span style="color:#ff66b2">panda</span></strong>
+
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
       <span class="navbar-toggler-icon"></span>
@@ -87,14 +94,24 @@
 
         <div class="d-flex gap-3 align-items-center mt-4 order-cta">
           <!-- App Store badge (inline fallback SVG) -->
-          <a href="#" class="d-inline-block">
-            <img src="images/appstore.svg" alt="Download on the App Store" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'135\' height=\'40\'><rect rx=\'6\' width=\'135\' height=\'40\' fill=\'%23000000\'/><text x=\'18\' y=\'25\' fill=\'%23fff\' font-family=\'Arial,Helvetica\' font-size=\'12\'>Download on the App Store</text></svg>';" />
-          </a>
+        <!-- App Store Button -->
+<a href="#" class="d-inline-flex align-items-center gap-2 text-decoration-none bg-dark text-white px-3 py-2 rounded-3">
+  <img src="Apple_logo_grey.svg" alt="Apple logo" width="20" height="20">
+  <div class="d-flex flex-column lh-1">
+    <small style="font-size: 10px;">Download on the</small>
+    <strong style="font-size: 14px;">App Store</strong>
+  </div>
+</a>
 
-          <!-- Google Play badge (inline fallback SVG) -->
-          <a href="#" class="d-inline-block">
-            <img src="images/playstore.svg" alt="Get it on Google Play" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'150\' height=\'40\'><rect rx=\'6\' width=\'150\' height=\'40\' fill=\'%23000000\'/><text x=\'18\' y=\'25\' fill=\'%23fff\' font-family=\'Arial,Helvetica\' font-size=\'12\'>Get it on Google Play</text></svg>';" />
-          </a>
+<!-- Google Play Button -->
+<a href="#" class="d-inline-flex align-items-center gap-2 text-decoration-none bg-dark text-white px-3 py-2 rounded-3">
+  <img src="download (2).png" alt="Google Play" width="20" height="20">
+  <div class="d-flex flex-column lh-1">
+    <small style="font-size: 10px;">Get it on</small>
+    <strong style="font-size: 14px;">Google Play</strong>
+  </div>
+</a>
+
 
           <a class="btn btn-panda ms-3">Order now</a>
         </div>
@@ -104,113 +121,452 @@
 
       <div class="col-lg-6 text-center d-none d-lg-block">
         <!-- Hero/panda image (use your uploaded screenshot) -->
-        <img src="images/hero.png" alt="panda-hero" class="img-fluid" style="max-height:420px;">
+        <img src="refresh-hero-city-pk.png" alt="panda-hero" class="img-fluid" style="max-height:420px;">
       </div>
     </div>
   </div>
 </section>
 
 <!-- Categories -->
-<section id="categories" class="py-5">
+<!-- ============================= -->
+<!-- Categories Section -->
+<!-- ============================= -->
+<section id="categories" class="py-5 bg-light">
   <div class="container">
-    <div class="d-flex justify-content-between align-items-center mb-3">
-      <h4 class="mb-0">Categories</h4>
-      <a href="#" class="text-decoration-none small">See all</a>
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h4 class="fw-semibold mb-0">🍴 Categories</h4>
+      <a href="#" class="text-decoration-none small text-danger fw-semibold">See all</a>
     </div>
-    <div class="row g-3">
-      <div class="col-6 col-md-3">
-        <div class="card category-card p-3 text-center">
-          <img src="images/category-pizza.jpg" class="img-fluid mb-2" alt="Pizza" style="height:90px;object-fit:cover;border-radius:8px">
-          <div>Pizza</div>
+
+    <div class="row g-3 g-md-4">
+      <!-- Category Card -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card border-0 shadow-sm text-center p-2 h-100 category-card">
+          <div class="overflow-hidden rounded-4">
+            <img src="Delicious Salami Pizza🍕.jpeg" class="card-img-top img-fluid" alt="Pizza">
+          </div>
+          <div class="card-body p-2">
+            <h6 class="card-title mb-0 fw-semibold text-dark">Pizza</h6>
+          </div>
         </div>
       </div>
-      <div class="col-6 col-md-3">
-        <div class="card category-card p-3 text-center">
-          <img src="images/category-burger.jpg" class="img-fluid mb-2" alt="Burger" style="height:90px;object-fit:cover;border-radius:8px">
-          <div>Burgers</div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card border-0 shadow-sm text-center p-2 h-100 category-card">
+          <div class="overflow-hidden rounded-4">
+            <img src="Mastering Chicken Biryani_ A History, Recipe, and Tips.jpeg" class="card-img-top img-fluid" alt="Biryani">
+          </div>
+          <div class="card-body p-2">
+            <h6 class="card-title mb-0 fw-semibold text-dark">Biryani</h6>
+          </div>
         </div>
       </div>
-      <div class="col-6 col-md-3">
-        <div class="card category-card p-3 text-center">
-          <img src="images/category-dessert.jpg" class="img-fluid mb-2" alt="Dessert" style="height:90px;object-fit:cover;border-radius:8px">
-          <div>Desserts</div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card border-0 shadow-sm text-center p-2 h-100 category-card">
+          <div class="overflow-hidden rounded-4">
+            <img src="🍔 Delicious Ham & Cheese Burger Recipe You’ll Crave.jpeg" class="card-img-top img-fluid" alt="Burger">
+          </div>
+          <div class="card-body p-2">
+            <h6 class="card-title mb-0 fw-semibold text-dark">Burgers</h6>
+          </div>
         </div>
       </div>
-      <div class="col-6 col-md-3">
-        <div class="card category-card p-3 text-center">
-          <img src="images/category-asian.jpg" class="img-fluid mb-2" alt="Asian" style="height:90px;object-fit:cover;border-radius:8px">
-          <div>Asian</div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card border-0 shadow-sm text-center p-2 h-100 category-card">
+          <div class="overflow-hidden rounded-4">
+            <img src="Pin on ♡ Someday ♡.jpeg" class="card-img-top img-fluid" alt="Desserts">
+          </div>
+          <div class="card-body p-2">
+            <h6 class="card-title mb-0 fw-semibold text-dark">Desserts</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card border-0 shadow-sm text-center p-2 h-100 category-card">
+          <div class="overflow-hidden rounded-4">
+            <img src="Free Bursting Berry Splash Image _ Download at StockCake.jpeg" class="card-img-top img-fluid" alt="Drinks">
+          </div>
+          <div class="card-body p-2">
+            <h6 class="card-title mb-0 fw-semibold text-dark">Drinks</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card border-0 shadow-sm text-center p-2 h-100 category-card">
+          <div class="overflow-hidden rounded-4">
+            <img src="Chinese Spaghetti Bolognese.jpeg" class="card-img-top img-fluid" alt="Chinese">
+          </div>
+          <div class="card-body p-2">
+            <h6 class="card-title mb-0 fw-semibold text-dark">Chinese</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card border-0 shadow-sm text-center p-2 h-100 category-card">
+          <div class="overflow-hidden rounded-4">
+            <img src="Looking to impress your barbecue guests_ These lamb, chicken and shrimp skewers are such an exciting choice! They’re so easy to make with no need to marinate, and even though their spices and sauces range from Hawa.jpeg" class="card-img-top img-fluid" alt="Chinese">
+          </div>
+          <div class="card-body p-2">
+            <h6 class="card-title mb-0 fw-semibold text-dark">bbq</h6>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card border-0 shadow-sm text-center p-2 h-100 category-card">
+          <div class="overflow-hidden rounded-4">
+            <img src="download (7).jpeg" class="card-img-top img-fluid" alt="Chinese">
+          </div>
+          <div class="card-body p-2">
+            <h6 class="card-title mb-0 fw-semibold text-dark">Continential</h6>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card border-0 shadow-sm text-center p-2 h-100 category-card">
+          <div class="overflow-hidden rounded-4">
+            <img src="Chana Gravy in Instant Pot _ Chickpeas Gravy.jpeg" class="card-img-top img-fluid" alt="Chinese">
+          </div>
+          <div class="card-body p-2">
+            <h6 class="card-title mb-0 fw-semibold text-dark">Daal chana</h6>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card border-0 shadow-sm text-center p-2 h-100 category-card">
+          <div class="overflow-hidden rounded-4">
+            <img src="Indian Green Beans Aloo Sabzi.jpeg" class="card-img-top img-fluid" alt="Chinese">
+          </div>
+          <div class="card-body p-2">
+            <h6 class="card-title mb-0 fw-semibold text-dark">sabzi</h6>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card border-0 shadow-sm text-center p-2 h-100 category-card">
+          <div class="overflow-hidden rounded-4">
+            <img src="Chicken Vindaloo Recipe.jpeg" class="card-img-top img-fluid" alt="Chinese">
+          </div>
+          <div class="card-body p-2">
+            <h6 class="card-title mb-0 fw-semibold text-dark">qorma</h6>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card border-0 shadow-sm text-center p-2 h-100 category-card">
+          <div class="overflow-hidden rounded-4">
+            <img src="Slow Cooked Beef Nihari.jpeg" class="card-img-top img-fluid" alt="Chinese">
+          </div>
+          <div class="card-body p-2">
+            <h6 class="card-title mb-0 fw-semibold text-dark">nihaari</h6>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card border-0 shadow-sm text-center p-2 h-100 category-card">
+          <div class="overflow-hidden rounded-4">
+            <img src="Bearded Tree Crispy Fried Chicken.jpeg" class="card-img-top img-fluid" alt="Chinese">
+          </div>
+          <div class="card-body p-2">
+            <h6 class="card-title mb-0 fw-semibold text-dark">broast</h6>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card border-0 shadow-sm text-center p-2 h-100 category-card">
+          <div class="overflow-hidden rounded-4">
+            <img src="download (8).jpeg" class="card-img-top img-fluid" alt="Chinese">
+          </div>
+          <div class="card-body p-2">
+            <h6 class="card-title mb-0 fw-semibold text-dark">Chinese</h6>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card border-0 shadow-sm text-center p-2 h-100 category-card">
+          <div class="overflow-hidden rounded-4">
+            <img src="Tasty Oven Grilled Fish Recipe.jpeg" class="card-img-top img-fluid" alt="Chinese">
+          </div>
+          <div class="card-body p-2">
+            <h6 class="card-title mb-0 fw-semibold text-dark">fish</h6>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card border-0 shadow-sm text-center p-2 h-100 category-card">
+          <div class="overflow-hidden rounded-4">
+            <img src="Crispy Fried Prawns Recipe - Awesome Cuisine.jpeg" class="card-img-top img-fluid" alt="Chinese">
+          </div>
+          <div class="card-body p-2">
+            <h6 class="card-title mb-0 fw-semibold text-dark">prawns</h6>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card border-0 shadow-sm text-center p-2 h-100 category-card">
+          <div class="overflow-hidden rounded-4">
+            <img src="Restaurant Style Mutton Karahi-Mutton Gosht - Rookie with a Cookie.jpeg" class="card-img-top img-fluid" alt="Chinese">
+          </div>
+          <div class="card-body p-2">
+            <h6 class="card-title mb-0 fw-semibold text-dark">chicken karahi</h6>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card border-0 shadow-sm text-center p-2 h-100 category-card">
+          <div class="overflow-hidden rounded-4">
+            <img src="The Best Club Sandwich in 2025.jpeg" class="card-img-top img-fluid" alt="Chinese">
+          </div>
+          <div class="card-body p-2">
+            <h6 class="card-title mb-0 fw-semibold text-dark">sandwiches</h6>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Restaurants -->
-<section id="restaurants" class="py-5 bg-light">
+<!-- ============================= -->
+<!-- Restaurants Section -->
+<!-- ============================= -->
+<section id="restaurants" class="py-5 bg-white">
   <div class="container">
-    <div class="d-flex justify-content-between align-items-center mb-3">
-      <h4 class="mb-0">Popular near you</h4>
-      <a href="#" class="text-decoration-none small">View all</a>
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h4 class="fw-semibold mb-0">🏠 Popular near you</h4>
+      <a href="#" class="text-decoration-none small text-danger fw-semibold">View all</a>
     </div>
 
     <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card restaurant-card h-100">
-          <img src="images/restaurant1.jpg" class="card-img-top" alt="restaurant 1">
+      <div class="col-md-4 col-sm-6">
+        <div class="card restaurant-card border-0 shadow-sm h-100">
+          <div class="overflow-hidden rounded-top-4">
+            <img src="download (9).jpeg" class="card-img-top" alt="restaurant 1">
+          </div>
           <div class="card-body">
-            <h5 class="card-title mb-1">Al Razzaq Nehari House</h5>
-            <p class="small text-muted mb-1">Pakistani • 30-40 min</p>
-            <div><span class="badge bg-success">4.5</span> <small class="text-muted">(38)</small></div>
+            <h5 class="card-title mb-1 fw-semibold">Al Razzaq Nehari House</h5>
+            <p class="small text-muted mb-2">Pakistani • 30-40 min</p>
+            <div>
+              <span class="badge bg-success">4.5 ★</span>
+              <small class="text-muted">(38)</small>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="col-md-4">
-        <div class="card restaurant-card h-100">
-          <img src="images/restaurant2.jpg" class="card-img-top" alt="restaurant 2">
+      <div class="col-md-4 col-sm-6">
+        <div class="card restaurant-card border-0 shadow-sm h-100">
+          <div class="overflow-hidden rounded-top-4">
+            <img src="ed7eeaf2-741a-4a03-8ad0-fc7ca4bc5a81.jpeg" class="card-img-top" alt="restaurant 2">
+          </div>
           <div class="card-body">
-            <h5 class="card-title mb-1">AA-2 Food Center</h5>
-            <p class="small text-muted mb-1">Pakistani • 20-30 min</p>
-            <div><span class="badge bg-success">3.6</span> <small class="text-muted">(500+)</small></div>
+            <h5 class="card-title mb-1 fw-semibold">AA-2 Food Center</h5>
+            <p class="small text-muted mb-2">Pakistani • 20-30 min</p>
+            <div>
+              <span class="badge bg-success">3.6 ★</span>
+              <small class="text-muted">(500+)</small>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="col-md-4">
-        <div class="card restaurant-card h-100">
-          <img src="images/restaurant3.jpg" class="card-img-top" alt="restaurant 3">
+      <div class="col-md-4 col-sm-6">
+        <div class="card restaurant-card border-0 shadow-sm h-100">
+          <div class="overflow-hidden rounded-top-4">
+            <img src="This Mom-And-Pop Restaurant In Ohio Will Serve You___.jpeg" class="card-img-top" alt="restaurant 3">
+          </div>
           <div class="card-body">
-            <h5 class="card-title mb-1">Jamil Haleem House</h5>
-            <p class="small text-muted mb-1">Desi • 30-40 min</p>
-            <div><span class="badge bg-success">4.9</span> <small class="text-muted">(100+)</small></div>
+            <h5 class="card-title mb-1 fw-semibold">Jamil Haleem House</h5>
+            <p class="small text-muted mb-2">Desi • 30-40 min</p>
+            <div>
+              <span class="badge bg-success">4.9 ★</span>
+              <small class="text-muted">(100+)</small>
+            </div>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
+<!-- ============================= -->
+<!-- Custom Styling -->
+<!-- ============================= -->
+<style>
+  /* ---------- Category Cards ---------- */
+  .category-card img {
+    height: 100px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+
+  .category-card {
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+    background-color: #fff;
+  }
+
+  .category-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 18px rgba(233, 30, 99, 0.25);
+  }
+
+  .category-card:hover img {
+    transform: scale(1.1);
+  }
+
+  .category-card:hover .card-title {
+    color: #e91e63;
+    transition: color 0.3s ease;
+  }
+
+  /* ---------- Restaurant Cards ---------- */
+  .restaurant-card img {
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+
+  .restaurant-card:hover img {
+    transform: scale(1.07);
+  }
+
+  .restaurant-card {
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .restaurant-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 18px rgba(233, 30, 99, 0.25);
+  }
+
+  /* ---------- Responsive Adjustments ---------- */
+  @media (max-width: 576px) {
+    .category-card img {
+      height: 85px;
+    }
+    .restaurant-card img {
+      height: 140px;
+    }
+  }
+</style>
+
+
 <!-- Footer -->
-<footer>
+<!-- ============================= -->
+<!-- Footer Section -->
+<!-- ============================= -->
+<footer class="footer py-5 mt-5 bg-light border-top">
   <div class="container">
     <div class="row align-items-center">
+      <!-- Left Section -->
       <div class="col-md-6">
-        <h5>Get the foodpanda app</h5>
-        <p class="small text-muted">Order faster with the app and access exclusive deals.</p>
-        <div class="app-badges d-flex gap-2">
-          <img src="images/appstore.svg" alt="App Store" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'135\' height=\'40\'><rect rx=\'6\' width=\'135\' height=\'40\' fill=\'%23000000\'/><text x=\'18\' y=\'25\' fill=\'%23fff\' font-family=\'Arial,Helvetica\' font-size=\'12\'>Download on the App Store</text></svg>';" />
-          <img src="images/playstore.svg" alt="Google Play" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'150\' height=\'40\'><rect rx=\'6\' width=\'150\' height=\'40\' fill=\'%23000000\'/><text x=\'18\' y=\'25\' fill=\'%23fff\' font-family=\'Arial,Helvetica\' font-size=\'12\'>Get it on Google Play</text></svg>';" />
-        </div>
+        <h5 class="fw-bold mb-2 text-dark">Get the <span style="color:#ff2b85;">foodpanda</span> app</h5>
+        <p class="small text-muted mb-4">
+          Hungry? Let your cravings meet convenience!  
+          Download the app now and enjoy quick orders, real-time tracking, and exclusive discounts 🍕✨
+        </p>
+
+        <!-- App Store Button -->
+        <a href="#" class="d-inline-flex align-items-center gap-2 text-decoration-none bg-dark text-white px-3 py-2 rounded-3 me-2 store-btn">
+          <img src="Apple_logo_grey.svg" alt="Apple logo" width="20" height="20">
+          <div class="d-flex flex-column lh-1">
+            <small style="font-size: 10px;">Download on the</small>
+            <strong style="font-size: 14px;">App Store</strong>
+          </div>
+        </a>
+
+        <!-- Google Play Button -->
+        <a href="#" class="d-inline-flex align-items-center gap-2 text-decoration-none bg-dark text-white px-3 py-2 rounded-3 store-btn">
+          <img src="download (2).png" alt="Google Play" width="20" height="20">
+          <div class="d-flex flex-column lh-1">
+            <small style="font-size: 10px;">Get it on</small>
+            <strong style="font-size: 14px;">Google Play</strong>
+          </div>
+        </a>
       </div>
-      <div class="col-md-6 text-md-end mt-3 mt-md-0">
-        <small class="text-muted">© Foodpanda — Clone for demo</small>
+
+      <!-- Right Section -->
+      <div class="col-md-6 text-md-end mt-4 mt-md-0">
+        <p class="small mb-1 text-muted">
+          © 2025 <span style="color:#ff2b85; font-weight:600;">foodpanda</span> — Delivering joy, one meal at a time 💗
+        </p>
+        <small class="text-secondary">Designed & developed with ❤️ by <strong>Amna Attaria</strong></small>
       </div>
     </div>
   </div>
 </footer>
 
+<!-- ============================= -->
+<!-- Footer Custom Styles -->
+<!-- ============================= -->
+<style>
+  .footer h5 {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  .store-btn {
+    transition: all 0.3s ease;
+  }
+
+  .store-btn:hover {
+    background-color: #ff2b85 !important;
+    color: #fff !important;
+    transform: translateY(-3px);
+  }
+
+  .footer p, .footer small {
+    font-family: "Poppins", sans-serif;
+  }
+
+  footer img {
+    object-fit: contain;
+  }
+</style>
+
+<!-- Bootstrap Bundle -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
